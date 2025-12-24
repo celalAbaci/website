@@ -33,14 +33,6 @@ services:
 
   # Next.js Frontend
   frontend:
-    # Assuming the frontend Dockerfile is in ./frontend directory
-    # If the folder doesn't exist, this will fail during build, but that's expected
-    # based on the prompt instructions to assume it exists.
-    # We use context: ./frontend if it existed.
-    # Since I don't have the frontend code, I will comment out the build context
-    # and use a placeholder image or assume the user will provide the context.
-    # However, the user asked to UPDATE the docker-compose to include it.
-    # I will assume the standard `build: ./frontend` configuration.
     build: ./frontend
     container_name: erka_frontend
     restart: always
