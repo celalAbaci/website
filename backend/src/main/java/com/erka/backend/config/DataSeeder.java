@@ -33,12 +33,12 @@ public class DataSeeder {
                 categoryRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
 
                 // Seed Products
-                Product p1 = Product.builder().name("Portland Çimento").description("50kg Çimento").price(new BigDecimal("150.00")).stock(100).imageUrl("cement.jpg").category(cat1).build();
-                Product p2 = Product.builder().name("Demir").description("İnşaat Demiri").price(new BigDecimal("5000.00")).stock(50).imageUrl("iron.jpg").category(cat1).build();
+                Product p1 = Product.builder().name("Portland Çimento").description("50kg Çimento").price(new BigDecimal("150.00")).stock(100).imageUrl("/images/cement.jpg").category(cat1).build();
+                Product p2 = Product.builder().name("Demir").description("İnşaat Demiri").price(new BigDecimal("5000.00")).stock(50).imageUrl("/images/iron.jpg").category(cat1).build();
 
-                Product p3 = Product.builder().name("Beyaz Tavan Boyası").description("20kg Boya").price(new BigDecimal("800.00")).stock(30).imageUrl("paint.jpg").category(cat2).build();
+                Product p3 = Product.builder().name("Beyaz Tavan Boyası").description("20kg Boya").price(new BigDecimal("800.00")).stock(30).imageUrl("/images/paint.jpg").category(cat2).build();
 
-                Product p4 = Product.builder().name("Taş Yünü").description("5cm Taş Yünü").price(new BigDecimal("120.00")).stock(200).imageUrl("wool.jpg").category(cat3).build();
+                Product p4 = Product.builder().name("Taş Yünü").description("5cm Taş Yünü").price(new BigDecimal("120.00")).stock(200).imageUrl("/images/wool.jpg").category(cat3).build();
 
                 productRepository.saveAll(Arrays.asList(p1, p2, p3, p4));
             }
